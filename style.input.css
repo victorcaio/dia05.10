@@ -1,0 +1,55 @@
+
+div.single-body{
+      width: 100%;
+max-width: 500vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+form{width: 100%;
+    max-width: 300px;
+    
+    
+}
+
+div.single-input{
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+}
+
+div.single-input label{
+    font-size: 26px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color: black;
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+
+div.single-input .input{  
+     width: 100%;
+     padding: 5px;
+     color:black;
+     border: 0;
+     border-bottom: 2px solid black;
+     outline: 0;
+     font-size: 16px;
+}
+
+div.single-input .input:focus, 
+div.single-input .input:valid{     
+         border-bottom: 2px solid rgb(56, 119, 236);    
+
+}
+
+div.single-input .input:focus~label, 
+div.single-input .input:valid~label{
+   transform: translateY(-20px);
+   font-size: 15px;
+   color: rgb(0, 40, 126) ;
+
+
+}
