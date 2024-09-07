@@ -7,7 +7,6 @@ h1 {
   text-align: center;
   font-size: 56px;
   font-weight: bold;
- 
 }
 body {
   display: flex;
@@ -18,7 +17,6 @@ body {
   overflow: hidden;
   perspective: 1000px;
 }
-
 .night {
   position: fixed;
   left: 50%;
@@ -29,12 +27,10 @@ body {
   filter: blur(0.1vmin);
   background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)), repeating-linear-gradient(220deg, black 0px, black 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, black 0px, black 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, black 0px, black 19px, transparent 19px, transparent 22px), linear-gradient(90deg, #00fffa, #f0f0f0);
 }
-
 .flowers {
   position: relative;
   transform: scale(0.9);
 }
-
 .flower {
   position: absolute;
   bottom: 10vmin;
@@ -67,7 +63,6 @@ body {
 .flower--1 .flower__line__leaf--6 {
   animation: blooming-leaf-left var(--fl-speed) 2s backwards;
 }
-
 .flower__leafs {
   position: relative;
   animation: blooming-flower 2s backwards;
@@ -193,16 +188,6 @@ body {
   transform-origin: right;
   transform: rotate(-70deg) rotateY(30deg) scale(0.6);
 }
-
-
-
-
-
-
-
-
-
-
 @keyframes moving-flower-1 {
   0%, 100% {
     transform: rotate(2deg);
@@ -211,8 +196,6 @@ body {
     transform: rotate(-2deg);
   }
 }
-
-
 @keyframes blooming-leaf-right {
   0% {
     transform-origin: left;
@@ -236,8 +219,6 @@ body {
     transform: scale(0);
   }
 }
-
-
 .not-loaded * {
   animation-play-state: paused !important;
 }
